@@ -1,0 +1,1489 @@
+@font-face {
+  font-family: Storytella;
+  src: url(../fonts/Storytella.otf); }
+@font-face {
+  font-family: Raleway;
+  src: url(../fonts/ralewayregular.woff);
+  font-weight: 400; }
+@font-face {
+  font-family: Raleway;
+  src: url(../fonts/ralewayblack.woff);
+  font-weight: 900; }
+@font-face {
+  font-family: Raleway;
+  src: url(../fonts/ralewaybold.woff);
+  font-weight: 700; }
+@font-face {
+  font-family: Raleway;
+  src: url(../fonts/ralewaylight.woff);
+  font-weight: 100; }
+@font-face {
+  font-family: Gilroy;
+  src: url(../fonts/Gilroyextrabold.woff);
+  font-weight: 400; }
+htlm,
+body {
+  background-color: lightgray;
+  height: 100%; }
+
+.container {
+  width: 1600px;
+  position: relative;
+  margin: 0 auto;
+  background-color: #fff; }
+
+header {
+  position: absolute;
+  min-height: 110px;
+  padding: 0 13em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: inherit; }
+
+.header__logo {
+  position: absolute;
+  width: 100px;
+  height: 165px;
+  background-color: #fcdb5a;
+  background-image: url(../images/logo.png);
+  background-repeat: no-repeat;
+  background-position: 50%; }
+
+.header__menu {
+  min-width: 410px;
+  height: 110px;
+  display: flex;
+  margin-left: 10em; }
+
+.header__menu-items {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+  margin: 0 1em;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px; }
+
+.header__menu-items:hover {
+  border-bottom: 2px solid #fcdb5a; }
+
+.menu__control {
+  display: none; }
+
+.menu__button {
+  display: none; }
+
+.header__submit {
+  width: 153px;
+  height: 45px;
+  border-radius: 22px;
+  background-color: #ffffff;
+  color: #1b1b1b;
+  font-family: Raleway;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  text-decoration: none; }
+
+.header__submit:hover {
+  cursor: pointer;
+  background-color: #fcdb5a; }
+
+.header__submit:active {
+  top: 1px;
+  left: 1px;
+  background-color: yellowgreen; }
+
+.organic-food {
+  width: 100%;
+  height: 1630px;
+  background: url(../images/of-background.jpg) no-repeat;
+  background-size: cover;
+  padding-top: 1px; }
+
+.organic-food__title {
+  display: block;
+  margin-top: 300px;
+  margin-left: 210px;
+  width: 520px;
+  height: 360px;
+  color: #ffffff;
+  font-family: Storytella;
+  font-size: 200px;
+  font-weight: 400;
+  line-height: 200px; }
+
+.organic-food__food {
+  width: 85%;
+  min-height: 680px;
+  margin: 187px auto 0;
+  display: grid;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: repeat(2, 1fr); }
+
+.organic-food__food__category {
+  display: flex;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Raleway";
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 30px;
+  text-transform: uppercase;
+  align-items: flex-end;
+  padding-left: 30px;
+  transition: transform 1.0s; }
+
+.organic-food__food__category p span {
+  font-weight: 900;
+  display: block; }
+
+.organic-food__food .awesome {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  background: url("../images/of-awesome.jpg") no-repeat;
+  background-size: cover; }
+
+.organic-food__food .organic {
+  grid-column: 4/8;
+  grid-row: 1/2;
+  background: url("../images/of-organic.jpg") no-repeat;
+  background-size: cover; }
+
+.organic-food__food .tasty {
+  grid-column: 8/12;
+  grid-row: 1/2;
+  background: url("../images/of-teasty.jpg") no-repeat;
+  background-size: cover; }
+
+.organic-food__food .agro {
+  grid-column: 4/7;
+  grid-row: 2/3;
+  align-items: center;
+  justify-content: center;
+  color: #fcdb5a;
+  font-size: 40px;
+  line-height: 50px; }
+
+.organic-food__food .juicy {
+  grid-column: 7/12;
+  grid-row: 2/3;
+  background: url("../images/of-juicy.jpg") no-repeat;
+  background-size: cover; }
+
+.organic-food__food__category:hover,
+.organic-food__food__category:focus {
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1); }
+
+.slogan {
+  width: 100%;
+  min-height: 570px;
+  padding: 5em 14em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.slogan__image {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 73em;
+  height: 530px;
+  padding: 45px 0 0 40em;
+  background: url("../images/slogan-bg-full.png") no-repeat; }
+  .slogan__image p {
+    display: block;
+    width: 520px;
+    height: 424px;
+    font-family: Storytella;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 100px;
+    margin: 0; }
+    .slogan__image p .color-yellow {
+      color: #fcdb5a; }
+    .slogan__image p .color-pink {
+      color: #db2985; }
+    .slogan__image p .color-green {
+      color: #72aa41; }
+    .slogan__image p .color-orange {
+      color: #f2a137; }
+    .slogan__image p .color-lightblue {
+      color: #4fb1c9; }
+
+.agro-services {
+  min-height: 445px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 110px 0 120px;
+  width: 100%;
+  padding-top: 0; }
+  .agro-services h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333333;
+    font-family: "Raleway";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 100; }
+    .agro-services h2 span {
+      font-weight: 900; }
+  .agro-services p {
+    margin: 0 auto 40px;
+    width: 546px;
+    text-align: center;
+    color: #b3b3b3;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px; }
+  .agro-services p {
+    width: 546px; }
+
+.agro-services__content {
+  min-height: 105px;
+  width: 82%;
+  margin: 95px auto 0;
+  display: flex;
+  justify-content: space-between; }
+
+.agro-services__type-of-agro {
+  min-width: 140px;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid transparent;
+  padding: 15px; }
+  .agro-services__type-of-agro span {
+    display: block;
+    margin-top: 34px;
+    color: #333333;
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 700; }
+
+.agro-services__type-of-agro:hover {
+  border: 2px solid #fcdb5a;
+  border-radius: 10px 20px 30px 40px/30px; }
+
+.agro-services__type-of-agro:active {
+  border: 2px solid yellowgreen; }
+
+.agro-perfect {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 110px 0 120px;
+  width: 100%;
+  min-height: 695px;
+  background: url("../images/agro-perfect-background.jpg") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding-top: 100px;
+  padding-left: 215px;
+  margin-bottom: -1em; }
+  .agro-perfect h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333333;
+    font-family: "Raleway";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 100; }
+    .agro-perfect h2 span {
+      font-weight: 900; }
+  .agro-perfect p {
+    margin: 0 auto 40px;
+    width: 546px;
+    text-align: center;
+    color: #b3b3b3;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px; }
+  .agro-perfect h2 {
+    width: 300px;
+    color: #ffffff; }
+  .agro-perfect p {
+    margin-left: 0;
+    width: 530px;
+    text-align: left; }
+
+.agro-perfect__submit {
+  width: 160px;
+  height: 54px;
+  display: flex;
+  color: #4f4a37;
+  border-radius: 26px;
+  background-color: #fcdb5a;
+  text-transform: uppercase;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  position: relative; }
+
+.agro-perfect__submit:hover {
+  cursor: pointer;
+  background-color: orange; }
+
+.agro-perfect__submit:active {
+  background-color: darkorange;
+  top: 1px;
+  left: 1px; }
+
+.examples-of-food {
+  width: 100%;
+  height: 470px;
+  background-color: #f9f9f9;
+  position: relative; }
+
+.examples-of-food__content {
+  width: 1170px;
+  height: 440px;
+  margin: 0 auto;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: #fff;
+  top: -95px; }
+
+.examples-of-food__food-position {
+  margin: 0;
+  width: 100%; }
+  .examples-of-food__food-position img {
+    float: left;
+    width: 290px; }
+  .examples-of-food__food-position figcaption {
+    padding: 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    float: right;
+    width: 290px;
+    height: 220px; }
+    .examples-of-food__food-position figcaption h3 {
+      font-family: Raleway;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 23px; }
+    .examples-of-food__food-position figcaption p {
+      color: #666666;
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 23px; }
+
+.examples-of-food__content .change-photos img {
+  float: right;
+  width: 290px; }
+.examples-of-food__content .change-photos figcaption {
+  float: left; }
+
+.tasty-cakes {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-top: 100px;
+  min-height: 685px;
+  background: url("../images/test-cakes-label.png") no-repeat 75% 5%, url("../images/tast-cakes-background_optimized.png") no-repeat 100%, #f9f9f9; }
+
+.tasty-cakes__title {
+  display: block;
+  margin-left: 1em;
+  width: 432px;
+  height: 382px;
+  color: #ccaf8a;
+  font-family: Storytella;
+  font-size: 230px;
+  font-weight: 400;
+  line-height: 180px; }
+
+.agro-progress {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 110px 0 120px;
+  width: 100%;
+  min-height: 545px; }
+  .agro-progress h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333333;
+    font-family: "Raleway";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 100; }
+    .agro-progress h2 span {
+      font-weight: 900; }
+  .agro-progress p {
+    margin: 0 auto 40px;
+    width: 546px;
+    text-align: center;
+    color: #b3b3b3;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px; }
+
+.agro-progress__content {
+  width: 1100px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px auto 0; }
+
+.agro-progress__content__type-of-progress {
+  margin: 0;
+  width: 215px;
+  height: 100%; }
+  .agro-progress__content__type-of-progress img {
+    float: left;
+    width: 70px; }
+  .agro-progress__content__type-of-progress figcaption {
+    float: right;
+    width: 115px;
+    height: 100%; }
+    .agro-progress__content__type-of-progress figcaption h3 {
+      margin: 10px 0 0;
+      color: #2e211d;
+      font-family: "Gilroy";
+      font-size: 50px;
+      font-weight: 400;
+      line-height: 50px;
+      text-transform: uppercase; }
+    .agro-progress__content__type-of-progress figcaption span {
+      margin: 0;
+      width: 76px;
+      text-align: left;
+      color: #555555;
+      font-family: Raleway;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 50px; }
+
+.products {
+  width: 100%;
+  min-height: 740px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr); }
+
+.products__food {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-decoration: none;
+  display: block; }
+  .products__food img {
+    width: inherit;
+    height: inherit;
+    transition: filter .5s; }
+
+.products__food__text {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 -50px 0;
+  width: 100px;
+  height: 20px;
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23px;
+  transition: opacity .5s; }
+
+.products__food:hover img {
+  -webkit-filter: brightness(40%);
+  filter: brightness(40%); }
+
+.products__food:hover .products__food__text {
+  opacity: 1; }
+
+.people-say {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 110px 0 120px;
+  width: 100%;
+  color: #FFF;
+  min-height: 715px;
+  background: url("../images/people-say-background.jpg") no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover; }
+  .people-say h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333333;
+    font-family: "Raleway";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 100; }
+    .people-say h2 span {
+      font-weight: 900; }
+  .people-say p {
+    margin: 0 auto 40px;
+    width: 546px;
+    text-align: center;
+    color: #b3b3b3;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px; }
+  .people-say h2 {
+    color: #fff; }
+
+.people-say-container {
+  width: 75%;
+  margin: 30px auto 0;
+  min-height: 230px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+
+.people-say__button {
+  display: block;
+  text-decoration: none;
+  border: 2px solid white;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-size: 40px;
+  opacity: 0;
+  transition: opacity .5s; }
+
+.people-say__button_left {
+  position: absolute;
+  top: 90px;
+  left: 10px; }
+
+.people-say__button_right {
+  position: absolute;
+  top: 90px;
+  right: 10px; }
+
+.people-say__button:hover {
+  box-shadow: 0 0 15px inset yellow; }
+
+.people-say__button:active {
+  box-shadow: 0 0 15px inset orange; }
+
+.people-say:hover .people-say__button {
+  opacity: 1; }
+
+.people-say__content {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 60em;
+  padding: 0 40px 20px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  min-height: 230px; }
+
+.people-say__content:before {
+  position: absolute;
+  content: '\201C';
+  width: 42px;
+  height: 33px;
+  color: #fcdb5a;
+  font-family: "Times New Roman PS - Bold MT";
+  font-size: 110px;
+  font-weight: 400;
+  line-height: 30px;
+  top: 15px;
+  left: -45px; }
+
+.people-say .people-say__content .people-say__dialog {
+  width: 100%;
+  min-height: 113px;
+  color: #ffffff;
+  font-family: "Times New Roman";
+  font-style: italic;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 30px;
+  display: none; }
+
+.people-say .people-say__content .dialog_show {
+  display: block; }
+
+.people-say__people {
+  margin: 0;
+  width: 420px;
+  display: none; }
+  .people-say__people img {
+    margin-right: 25px;
+    border-radius: 50%; }
+  .people-say__people P {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    color: #fff;
+    text-align: left;
+    font-size: 18px;
+    line-height: 23px;
+    font-family: "Raleway";
+    font-weight: 400; }
+    .people-say__people P span {
+      font-weight: 700; }
+
+.people_show {
+  display: flex; }
+
+.people-say__navigate {
+  display: flex;
+  width: 80px;
+  align-items: center;
+  justify-content: space-between; }
+
+.people-say__navigate__point {
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #5b5b5b;
+  border-radius: 50%; }
+
+.people-say__navigate__point:hover {
+  cursor: pointer; }
+
+.point-active {
+  background-color: #fcdb5a; }
+
+.people-say__navigate__point:hover {
+  background-color: #fcdb5a; }
+
+.blog-posts {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 110px 0 120px;
+  width: 100%;
+  min-height: 1095px; }
+  .blog-posts h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333333;
+    font-family: "Raleway";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    text-transform: uppercase;
+    font-weight: 100; }
+    .blog-posts h2 span {
+      font-weight: 900; }
+  .blog-posts p {
+    margin: 0 auto 40px;
+    width: 546px;
+    text-align: center;
+    color: #b3b3b3;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 25px; }
+
+.blog-posts__content {
+  margin: 0 auto;
+  width: 75%;
+  height: 400px;
+  display: flex;
+  justify-content: space-between; }
+
+.blog-posts__news {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 370px;
+  height: 396px;
+  padding: 235px 30px 25px;
+  position: relative;
+  display: block; }
+
+.blog-post-bread {
+  background: url("../images/blog-post-bread.jpg") no-repeat; }
+
+.blog-post-vegetable {
+  background: url("../images/blog-post-vegetable.jpg") no-repeat; }
+
+.blog-post-milk {
+  background: url("../images/blog-post-milk.jpg") no-repeat; }
+
+.news-date {
+  width: 61px;
+  height: 65px;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  padding-top: 17px;
+  background-color: #fcdb5a;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  filter: none; }
+
+.news-date .news-date__day {
+  width: 100%;
+  display: block;
+  text-align: center;
+  color: #333333;
+  font-family: "Gilroy";
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: uppercase; }
+
+.news-date .news-date__month {
+  width: inherit;
+  color: #9a8841;
+  font-family: "Raleway";
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 10px; }
+
+.blog-posts__news .blog-post__news__title {
+  display: block;
+  margin-top: 80px;
+  color: #ddc051;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 23px;
+  text-transform: uppercase; }
+
+.blog-post__news__text {
+  color: #ffffff;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 50px;
+  width: inherit;
+  text-align: left;
+  text-decoration: none; }
+
+.blog-post__news__text:hover {
+  color: yellowgreen; }
+
+.blog-post__news__text:active {
+  color: orange; }
+
+.blog-posts__partners {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 130px auto 0;
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+  min-height: 165px; }
+
+.blog-posts__partners___company {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid transparent; }
+
+.blog-posts__partners___company:hover {
+  border: 2px solid #fcdb5a;
+  border-radius: 10px 20px 30px 40px/30px; }
+
+.blog-posts__partners___company:active {
+  border: 2px solid yellowgreen; }
+
+.organic-footer {
+  width: 100%;
+  display: flex;
+  min-height: 503px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.organic-data {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #333333;
+  padding: 75px 100px 36px 225px;
+  width: 62%; }
+
+.organic-map {
+  width: 38%; }
+
+.organic-footer .header__logo {
+  display: block;
+  height: 134px; }
+
+.organic-footer__navigate {
+  margin-left: 18em;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 160px;
+  margin-right: 180px; }
+
+.organic-footer__navigate__items {
+  padding: 0;
+  margin-right: 80px;
+  text-decoration: none;
+  height: 24px;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+  color: #aaaaaa;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400; }
+
+.organic-footer__navigate__items:hover {
+  border-bottom: 2px solid #fcdb5a;
+  color: #ffffff; }
+
+.organic-data__contacts {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  margin-top: 65px;
+  margin-bottom: 20px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #464646; }
+
+.organic-data__contacts__email {
+  width: 190px; }
+
+organic-data__contacts__phone {
+  width: 215px; }
+
+.style-contacts span {
+  display: block;
+  width: 100%;
+  color: #fde557;
+  font-family: Raleway;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 25px;
+  text-transform: uppercase; }
+.style-contacts a {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px; }
+
+.organic-data__contacts__social {
+  width: 105px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.social__block {
+  display: block;
+  width: 24px;
+  height: 24px; }
+
+.twit {
+  background: url(../images/twitter.png) no-repeat;
+  background-size: 100%;
+  background-position: 50% 50%; }
+
+.face {
+  background: url(../images/facebook.png) no-repeat;
+  background-size: 45%; }
+
+.linkedin {
+  background: url(../images/linkedin.png) no-repeat;
+  background-size: cover; }
+
+.organic-footer__product-created,
+.organic-footer__rights {
+  float: left;
+  color: #7e7e7e;
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-weight: 400; }
+
+.organic-footer__product-created {
+  float: left; }
+
+.organic-footer__rights {
+  float: right; }
+
+.organic-map {
+  background: url("../images/map-logo.png") no-repeat 56% 50%, url("../images/map.jpg") no-repeat; }
+
+@media only screen and (max-width: 1620px) {
+  .container {
+    width: 1200px; }
+
+  .slogan {
+    padding: 5em 7em; }
+
+  .slogan__image {
+    padding: 45px 0 0 38em;
+    width: 67em; }
+    .slogan__image p {
+      width: 400px;
+      font-size: 70px; }
+
+  .products {
+    min-height: 600px; }
+
+  .people-say__button {
+    margin: 0 20px; }
+
+  .people-say-container {
+    width: 95%; }
+
+  .blog-posts__content {
+    width: 90%; }
+
+  .blog-posts__news {
+    width: 340px;
+    height: 360px;
+    padding: 185px 30px 25px; }
+
+  .blog-posts__partners {
+    margin: 70px auto 0;
+    width: 90%; }
+
+  .organic-footer {
+    min-height: 440px; }
+
+  .organic-data {
+    padding: 45px 50px 47px 120px; }
+
+  .organic-data__contacts {
+    margin-top: 25px; }
+
+  .organic-map {
+    background: url(../images/map-logo.png) no-repeat 56% 50%, url(../images/map.jpg) no-repeat 50%; } }
+@media only screen and (max-width: 1220px) {
+  .container {
+    width: 1024px; }
+
+  header {
+    padding: 0 4em; }
+
+  .organic-food {
+    height: 1168px; }
+
+  .organic-food__title {
+    margin-top: 200px;
+    margin-left: 172px;
+    width: 381px;
+    font-size: 120px;
+    line-height: inherit; }
+
+  .organic-food__food {
+    width: 90%;
+    min-height: 450px;
+    margin: 110px auto 0; }
+
+  .organic-food__food .agro {
+    font-size: 25px;
+    line-height: inherit; }
+
+  .organic-food__food__category {
+    font-size: 25px;
+    line-height: inherit; }
+
+  .slogan__image {
+    width: 50em;
+    height: 390px;
+    background-size: contain;
+    padding: 39px 0 0 28em; }
+
+  .slogan__image p {
+    width: 360px;
+    font-size: 64px;
+    line-height: inherit;
+    height: 291px; }
+
+  .agro-services__content {
+    width: 85%; }
+
+  .agro-services__type-of-agro {
+    min-width: 86px; }
+
+  .agro-services__type-of-agro img {
+    width: 40px; }
+
+  .agro-services__type-of-agro span {
+    margin-top: 20px; }
+
+  .agro-perfect {
+    padding-top: 50px;
+    padding-left: 173px; }
+
+  .examples-of-food__content {
+    width: 1024px; }
+
+  .examples-of-food__food-position figcaption {
+    width: 256px; }
+
+  .examples-of-food {
+    height: 287px; }
+
+  .examples-of-food__food-position {
+    margin: 0 auto; }
+
+  .examples-of-food__content {
+    width: 1024px;
+    height: 387px; }
+
+  .examples-of-food__food-position img {
+    width: 255px; }
+
+  .examples-of-food__content .change-photos img {
+    width: 255px; }
+
+  .examples-of-food__food-position figcaption {
+    height: 190px;
+    width: 255px;
+    padding: 10px; }
+
+  .tasty-cakes__title {
+    font-size: 140px; }
+
+  .agro-progress {
+    padding: 50px 0 50px;
+    min-height: 450px; }
+
+  .agro-progress__content {
+    width: 950px; }
+
+  .products {
+    min-height: 490px; }
+
+  .people-say {
+    padding: 50px 0 50px;
+    min-height: 580px; }
+
+  .people-say__content {
+    padding: 0 110px 20px;
+    width: 55em; }
+
+  .people-say__content:before {
+    left: 55px; }
+
+  .people-say .people-say__content .people-say__dialog {
+    font-size: 19px; }
+
+  .blog-posts {
+    padding: 50px 0 50px;
+    min-height: 805px; }
+
+  .blog-posts__news {
+    width: 274px;
+    height: 336px;
+    background-size: contain;
+    padding: 130px 30px 25px; }
+
+  .blog-post__news__text {
+    line-height: inherit; }
+
+  .blog-posts__content {
+    height: 253px; }
+
+  .organic-footer {
+    min-height: 420px; }
+
+  .organic-data {
+    padding: 40px 40px 35px 40px; }
+
+  .organic-footer .header__logo {
+    height: 100px;
+    width: 80px; }
+
+  .organic-footer__navigate {
+    margin-left: 14em; } }
+@media only screen and (max-width: 1050px) {
+  .container {
+    width: 700px; }
+
+  header {
+    padding: 0 1em;
+    min-height: 70px; }
+
+  .header__logo {
+    width: 70px;
+    height: 125px;
+    background-size: 50%; }
+
+  .header__menu {
+    height: 70px;
+    margin-left: 6em; }
+
+  .header__menu-items {
+    font-size: 12px; }
+
+  .header__submit {
+    width: 120px;
+    height: 35px;
+    font-size: 10px; }
+
+  .organic-food {
+    height: 780px; }
+
+  .organic-food__title {
+    margin-top: 140px;
+    margin-left: 140px;
+    font-size: 90px;
+    height: 200px; }
+
+  .organic-food__food {
+    min-height: 305px;
+    font-size: 18px; }
+
+  .organic-food__food__category {
+    padding-left: 15px; }
+
+  .organic-food__food .agro {
+    font-size: 18px; }
+
+  .slogan {
+    padding: 4em 4em;
+    min-height: 410px; }
+
+  .slogan__image {
+    width: 35em;
+    height: 280px;
+    padding: 31px 0 0 20em; }
+
+  .slogan__image p {
+    width: 200px;
+    font-size: 38px; }
+
+  .agro-services {
+    padding: 70px 0 80px; }
+
+  .agro-services h2 {
+    font-size: 30px; }
+
+  .agro-services p {
+    margin: 0px auto 0;
+    font-size: 15px; }
+
+  .agro-services__content {
+    margin: 70px auto 0;
+    width: 85%;
+    flex-wrap: wrap;
+    justify-content: center; }
+
+  .agro-services__type-of-agro img {
+    width: 30px; }
+
+  .agro-services__type-of-agro span {
+    font-size: 12px; }
+
+  .agro-perfect {
+    padding-top: 30px;
+    padding-left: 100px;
+    min-height: 540px; }
+
+  .agro-perfect h2 {
+    text-align: left;
+    font-size: 30px;
+    line-height: inherit; }
+
+  .agro-perfect p {
+    font-size: 15px; }
+
+  .agro-perfect__submit {
+    width: 120px;
+    height: 35px;
+    font-size: 12px; }
+
+  .examples-of-food {
+    height: 770px; }
+
+  .examples-of-food__content {
+    width: 73%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr); }
+
+  .examples-of-food__content .change-photos img {
+    float: left; }
+
+  .examples-of-food__content .change-photos figcaption {
+    background-color: #fff;
+    height: 193px; }
+
+  .tasty-cakes__title {
+    font-size: 90px;
+    width: 300px;
+    line-height: inherit; }
+
+  .tasty-cakes {
+    padding-top: 70px;
+    min-height: 520px;
+    background: url(../images/test-cakes-label.png) no-repeat 94% 5%, url(../images/tast-cakes-background_optimized.png) no-repeat 100%, #f9f9f9; }
+
+  .agro-progress {
+    padding: 30px 0 50px; }
+
+  .agro-progress h2 {
+    font-size: 30px;
+    margin-bottom: 20px; }
+
+  .agro-progress p {
+    font-size: 15px; }
+
+  .agro-progress__content {
+    width: 85%;
+    flex-wrap: wrap;
+    justify-content: center; }
+
+  .agro-progress__content__type-of-progress {
+    width: 170px;
+    margin: 0 60px; }
+
+  .agro-progress__content__type-of-progress img {
+    width: 40px; }
+
+  .agro-progress__content__type-of-progress figcaption h3 {
+    margin: 0;
+    font-size: 30px;
+    line-height: inherit; }
+
+  .agro-progress__content__type-of-progress figcaption p {
+    line-height: inherit; }
+
+  .products {
+    min-height: 390px; }
+
+  .people-say {
+    min-height: 520px; }
+
+  .people-say-container {
+    width: 100%; }
+
+  .people-say h2 {
+    font-size: 30px; }
+
+  .people-say p {
+    font-size: 15px;
+    line-height: inherit; }
+
+  .people-say__content {
+    padding: 0px 55px 20px; }
+
+  .people-say .people-say__content .people-say__dialog {
+    font-size: 14px;
+    min-height: 125px; }
+
+  .people-say__people {
+    width: 395px; }
+
+  .people-say__content:before {
+    font-size: 70px;
+    left: 25px; }
+
+  .people-say__button {
+    display: none; }
+
+  .blog-posts {
+    padding: 15px 0 30px;
+    min-height: 670px; }
+
+  .blog-posts h2 {
+    font-size: 30px; }
+
+  .blog-posts p {
+    font-size: 15px; }
+
+  .blog-posts__news {
+    width: 185px;
+    height: 200px;
+    padding: 50px 15px 25px; }
+
+  .news-date {
+    width: 40px;
+    height: 50px;
+    left: 15px;
+    padding-top: 10px; }
+
+  .news-date .news-date__day {
+    font-size: 20px; }
+
+  .blog-post__news__text {
+    font-size: 12px; }
+
+  .blog-posts__partners {
+    margin: 15px auto 0;
+    flex-wrap: wrap; }
+
+  .blog-posts__partners___company img {
+    border-style: none;
+    width: 80px; }
+
+  .organic-data {
+    padding: 20px 20px 0 20px; }
+
+  .organic-footer .header__logo {
+    height: 70px;
+    width: 60px; }
+
+  .organic-footer__navigate {
+    margin: 0 0 0 8em; }
+
+  .organic-data__contacts {
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    margin-top: 0px; }
+
+  .organic-footer__rights {
+    float: left; }
+
+  .organic-map {
+    background: url(../images/map-logo.png) no-repeat 63% 50%, url(../images/map.jpg) no-repeat 50%; } }
+@media only screen and (max-width: 800px) {
+  .content {
+    width: 100%; }
+
+  header {
+    padding: 0 1em;
+    border-bottom: 1px solid transparent; }
+
+  .header__submit {
+    display: none; }
+
+  .header__logo {
+    width: 60px;
+    height: 80px;
+    z-index: 50; }
+
+  .menu {
+    position: fixed;
+    z-index: 2;
+    background: #000;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    top: -115px;
+    left: 0;
+    list-style-type: none;
+    font-size: 20px;
+    font-family: Arial;
+    line-height: 2;
+    text-transform: uppercase;
+    transition: top 1s ease-in-out; }
+
+  .menu__control {
+    display: none; }
+
+  .menu__control:checked + .menu {
+    top: 0; }
+
+  .menu__control:checked + .menu .menu__button {
+    bottom: 50%; }
+
+  .menu__control:checked + .menu + .container {
+    top: 115px; }
+
+  .menu__button {
+    display: block;
+    width: 30px;
+    height: 25px;
+    padding: 10px;
+    background: #000;
+    cursor: pointer;
+    position: absolute;
+    left: 88%;
+    bottom: -55%;
+    transition: bottom 1s ease-in-out; }
+
+  .menu__button-line {
+    display: block;
+    margin-top: 5px;
+    border-bottom: 2px solid #fff; }
+
+  .container {
+    position: relative;
+    z-index: 1; }
+
+  .organic-footer .header__logo {
+    z-index: 1; } }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .container {
+    width: 100%; }
+
+  header {
+    position: fixed;
+    z-index: 100; }
+
+  .header__menu {
+    margin-left: 4em; }
+
+  .header__menu-items {
+    font-size: 17px;
+    font-weight: 700;
+    color: orange; }
+
+  .header__menu-items:hover {
+    border-bottom: 2px solid transparent; }
+
+  .header__submit {
+    border: 2px solid lightseagreen;
+    background-color: #fcdb5a; }
+
+  .slogan__image {
+    margin: 0 auto; }
+
+  .examples-of-food__food-position {
+    background-color: #fff; }
+
+  .examples-of-food__content .change-photos figcaption {
+    float: right; }
+
+  .people-say .people-say__content .people-say__dialog {
+    font-size: 20px; }
+
+  .people-say {
+    background-size: auto; }
+
+  .organic-data__contacts__email {
+    width: 100%; } }
+
+/*# sourceMappingURL=style.css.map */
